@@ -719,3 +719,113 @@ Processing by PicturesController#index as HTML
 Completed 200 OK in 143ms (Views: 93.9ms | ActiveRecord: 35.8ms)
 
 
+  [1m[35m (1015.6ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (515.2ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (107.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (30.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePictures (20180618202627)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (46.6ms)[0m  [1m[35mCREATE TABLE "pictures" ("id" bigserial primary key, "description" character varying, "photographer" character varying, "url" character varying, "like_count" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180618202627_create_pictures.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (33.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180618202627"]]
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateComments (20180618202836)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" character varying, "picture_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180618202836_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180618202836"]]
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-19 19:30:50.857143"], ["updated_at", "2018-06-19 19:30:50.857143"]]
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (18.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (2.6ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A paraglider gliding over Les 2 Alpes snowy mountainside"], ["photographer", "Matthieu A"], ["url", "https://images.unsplash.com/photo-1492896864827-5fc3ef540db6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=9405bd795c236247e2bc284ff6820a76"], ["created_at", "2018-06-19 19:32:33.856935"], ["updated_at", "2018-06-19 19:32:33.856935"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (7.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A spectacular view of the inside of a canyon under a cloudy sky"], ["photographer", "Ben Esteves"], ["url", "https://images.unsplash.com/photo-1478103470625-ea17d788a009?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=0159b5836bf71fb02829b536ab7351f5"], ["created_at", "2018-06-19 19:32:34.137591"], ["updated_at", "2018-06-19 19:32:34.137591"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (25.6ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Shades of orange sunset above mountains in Ortisei"], ["photographer", "Alessandro Sacchi"], ["url", "https://images.unsplash.com/photo-1485805288518-52e7a4edfd78?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=267744bc8a4c17982002f7b2686e9821"], ["created_at", "2018-06-19 19:32:34.661372"], ["updated_at", "2018-06-19 19:32:34.661372"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A view from an airplane window on the surface of the ocean with rocky islands jutting out of the water"], ["photographer", "Kirill Zakharov"], ["url", "https://images.unsplash.com/photo-1470290282174-30ea78123183?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=3f00f7854af3d564e36d1e1c6e4ab45c"], ["created_at", "2018-06-19 19:32:35.657264"], ["updated_at", "2018-06-19 19:32:35.657264"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A blurry photo of a person walking in snow on the side of a road in Tomsk"], ["photographer", "Roman Romashov"], ["url", "https://images.unsplash.com/photo-1496754154452-517fd13422ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=0cf385260aa276c3f3d697ce0cbb64e8"], ["created_at", "2018-06-19 19:32:36.705613"], ["updated_at", "2018-06-19 19:32:36.705613"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.9ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A blurry photo of a person walking in snow on the side of a road in Tomsk"], ["photographer", "Roman Romashov"], ["url", "https://images.unsplash.com/photo-1496754154452-517fd13422ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=0cf385260aa276c3f3d697ce0cbb64e8"], ["created_at", "2018-06-19 19:32:37.387723"], ["updated_at", "2018-06-19 19:32:37.387723"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A blurry photo of a person walking in snow on the side of a road in Tomsk"], ["photographer", "Roman Romashov"], ["url", "https://images.unsplash.com/photo-1496754154452-517fd13422ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk2fQ&s=0cf385260aa276c3f3d697ce0cbb64e8"], ["created_at", "2018-06-19 19:32:37.505694"], ["updated_at", "2018-06-19 19:32:37.505694"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+Started GET "/pictures" for 127.0.0.1 at 2018-06-19 15:33:44 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#index as HTML
+  [1m[36mPicture Load (2.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (4.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 3]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (164.59ms)
+Completed 200 OK in 356ms (Views: 258.4ms | ActiveRecord: 56.6ms)
+
+

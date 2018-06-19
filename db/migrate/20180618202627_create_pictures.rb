@@ -4,6 +4,7 @@ class CreatePictures < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :photographer
       t.string :url
+      t.integer :like_count
 
       t.timestamps
     end

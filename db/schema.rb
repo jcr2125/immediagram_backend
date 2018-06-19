@@ -22,16 +22,11 @@ ActiveRecord::Schema.define(version: 2018_06_18_202836) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "likes", force: :cascade do |t|
-    t.integer "picture_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "pictures", force: :cascade do |t|
     t.string "description"
     t.string "photographer"
     t.string "url"
+    t.integer "like_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
