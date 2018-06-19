@@ -829,3 +829,398 @@ Processing by PicturesController#index as HTML
 Completed 200 OK in 356ms (Views: 258.4ms | ActiveRecord: 56.6ms)
 
 
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:19:45 -0400
+  [1m[35m (22.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [PATCH] "/pictures/1"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:20:19 -0400
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+Unpermitted parameter: :id
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/pictures_controller.rb:9:in `update'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:20:56 -0400
+  [1m[35m (22.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+Unpermitted parameter: :id
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/pictures_controller.rb:9:in `update'
+  [1m[36mPicture Load (42.4ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPicture Load (33.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+Started GET "/pictures/1" for 127.0.0.1 at 2018-06-19 16:23:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures/1"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pictures" for 127.0.0.1 at 2018-06-19 16:23:28 -0400
+Started GET "/pictures" for 127.0.0.1 at 2018-06-19 16:23:38 -0400
+Processing by PicturesController#index as HTML
+  [1m[36mPicture Load (22.6ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (17.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 3]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (17.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (527.18ms)
+Completed 200 OK in 914ms (Views: 620.1ms | ActiveRecord: 248.8ms)
+
+
+Processing by PicturesController#index as HTML
+  [1m[36mPicture Load (19.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (19.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 3]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (17.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers]   [1m[36mComment Load (17.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (107.83ms)
+Completed 200 OK in 238ms (Views: 55.5ms | ActiveRecord: 173.2ms)
+
+
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:26:06 -0400
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Unpermitted parameter: :id
+  [1m[35m (31.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:11
+[active_model_serializers]   [1m[36mComment Load (36.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:12
+[active_model_serializers] Rendered PictureSerializer with ActiveModelSerializers::Adapter::Attributes (46.06ms)
+Completed 202 Accepted in 192ms (Views: 8.0ms | ActiveRecord: 162.4ms)
+
+
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:31:53 -0400
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:12
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:13
+[active_model_serializers] Rendered PictureSerializer with ActiveModelSerializers::Adapter::Attributes (31.49ms)
+Completed 202 Accepted in 138ms (Views: 10.4ms | ActiveRecord: 106.0ms)
+
+
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:33:00 -0400
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Unpermitted parameter: :id
+Completed 500 Internal Server Error in 40999ms (ActiveRecord: 90.4ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/pictures_controller.rb:12:in `update'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:34:36 -0400
+  [1m[35m (19.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (2.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Completed 500 Internal Server Error in 207236ms (ActiveRecord: 136.8ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/pictures_controller.rb:12:in `update'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:39:25 -0400
+  [1m[35m (20.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (1.9ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Completed 500 Internal Server Error in 988689ms (ActiveRecord: 90.7ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/pictures_controller.rb:12:in `update'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:56:54 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#update as */*
+  Parameters: {"pictures"=>{"like_count"=>"1"}, "id"=>"1", "picture"=>{}}
+  [1m[36mPicture Load (1.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+Completed 400 Bad Request in 84ms (ActiveRecord: 40.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: picture):
+  
+app/controllers/pictures_controller.rb:23:in `picture_params'
+app/controllers/pictures_controller.rb:12:in `update'
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:57:51 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#update as */*
+  Parameters: {"picture"=>{"like_count"=>"1"}, "id"=>"1"}
+  [1m[36mPicture Load (3.0ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[36mPicture Update (6.5ms)[0m  [1m[33mUPDATE "pictures" SET "like_count" = $1, "updated_at" = $2 WHERE "pictures"."id" = $3[0m  [["like_count", 1], ["updated_at", "2018-06-19 20:57:53.573397"], ["id", 1]]
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:13
+[active_model_serializers]   [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:14
+[active_model_serializers] Rendered PictureSerializer with ActiveModelSerializers::Adapter::Attributes (128.63ms)
+Completed 202 Accepted in 253ms (Views: 144.3ms | ActiveRecord: 59.8ms)
+
+
+Started PATCH "/pictures/1" for 127.0.0.1 at 2018-06-19 16:58:13 -0400
+Processing by PicturesController#update as */*
+  Parameters: {"picture"=>{"like_count"=>"0"}, "id"=>"1"}
+  [1m[36mPicture Load (2.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[36mPicture Update (0.8ms)[0m  [1m[33mUPDATE "pictures" SET "like_count" = $1, "updated_at" = $2 WHERE "pictures"."id" = $3[0m  [["like_count", 0], ["updated_at", "2018-06-19 20:58:13.675689"], ["id", 1]]
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:13
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 1]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:14
+[active_model_serializers] Rendered PictureSerializer with ActiveModelSerializers::Adapter::Attributes (3.77ms)
+Completed 202 Accepted in 18ms (Views: 3.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/pictures" for 127.0.0.1 at 2018-06-19 17:08:01 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#create as */*
+  Parameters: {"picture"=>{"photographer"=>"John Rodriguez"}}
+  [1m[35m (17.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[36mPicture Create (8.8ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["photographer", "John Rodriguez"], ["created_at", "2018-06-19 21:08:04.019774"], ["updated_at", "2018-06-19 21:08:04.019774"]]
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:10
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 68.5ms)
+
+
+  
+NoMethodError (undefined method `t' for #<PicturesController:0x007fd313da19f0>):
+  
+app/controllers/pictures_controller.rb:11:in `create'
+Started POST "/pictures" for 127.0.0.1 at 2018-06-19 17:09:23 -0400
+  [1m[35m (36.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#create as */*
+  Parameters: {"picture"=>{"photographer"=>"John Rodriguez"}}
+  [1m[35m (26.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[36mPicture Create (1.3ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["photographer", "John Rodriguez"], ["created_at", "2018-06-19 21:09:25.821504"], ["updated_at", "2018-06-19 21:09:25.821504"]]
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:10
+Completed 500 Internal Server Error in 393ms (ActiveRecord: 214.1ms)
+
+
+  
+NoMethodError (undefined method `t' for #<PicturesController:0x007fee60245c88>):
+  
+app/controllers/pictures_controller.rb:11:in `create'
+Started POST "/pictures" for 127.0.0.1 at 2018-06-19 17:12:36 -0400
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#create as */*
+  Parameters: {"picture"=>{"photographer"=>"John Rodriguez"}}
+  [1m[35m (21.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[36mPicture Create (1.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["photographer", "John Rodriguez"], ["created_at", "2018-06-19 21:12:38.364202"], ["updated_at", "2018-06-19 21:12:38.364202"]]
+  ↳ app/controllers/pictures_controller.rb:10
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 94ms (Views: 9.1ms | ActiveRecord: 66.4ms)
+
+
+  [1m[36mPicture Load (1.4ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started DELETE "/pictures/10" for 127.0.0.1 at 2018-06-19 17:22:21 -0400
+  
+ActionController::RoutingError (undefined method `before_destroy' for PicturesController:Class
+Did you mean?  before_action):
+  
+app/controllers/pictures_controller.rb:3:in `<class:PicturesController>'
+app/controllers/pictures_controller.rb:1:in `<main>'
+Started DELETE "/pictures/10" for 127.0.0.1 at 2018-06-19 17:23:33 -0400
+Processing by PicturesController#destroy as */*
+  Parameters: {"id"=>"10", "picture"=>{}}
+  [1m[36mPicture Load (1.0ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:42
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 89.7ms)
+
+
+  
+NoMethodError (undefined method `comments' for #<PicturesController:0x007f815d2a3010>
+Did you mean?  comments_url):
+  
+app/controllers/pictures_controller.rb:38:in `destroy_comments'
+app/controllers/pictures_controller.rb:29:in `destroy'
+Started DELETE "/pictures/10" for 127.0.0.1 at 2018-06-19 17:27:12 -0400
+Processing by PicturesController#destroy as */*
+  Parameters: {"id"=>"10", "picture"=>{}}
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:44
+  [1m[36mComment Load (31.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 10]]
+  ↳ app/controllers/pictures_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:32
+  [1m[36mPicture Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/pictures_controller.rb:32
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:32
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 245ms (Views: 4.0ms | ActiveRecord: 113.1ms)
+
+
+  [1m[36mPicture Load (5.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" ORDER BY "pictures"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/pictures/3" for 127.0.0.1 at 2018-06-19 17:28:11 -0400
+Processing by PicturesController#destroy as */*
+  Parameters: {"id"=>"3", "picture"=>{}}
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pictures_controller.rb:44
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 3]]
+  ↳ app/controllers/pictures_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:32
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/pictures_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:32
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/pictures" for 127.0.0.1 at 2018-06-19 17:30:00 -0400
+Processing by PicturesController#create as */*
+  Parameters: {"picture"=>{"photographer"=>"Drin"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[36mPicture Create (4.2ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["photographer", "Drin"], ["created_at", "2018-06-19 21:30:00.556559"], ["updated_at", "2018-06-19 21:30:00.556559"]]
+  ↳ app/controllers/pictures_controller.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pictures_controller.rb:12
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 5.1ms)
+
+
+  [1m[36mPicture Load (2.0ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]

@@ -9,7 +9,7 @@ require 'rest-client'
 require 'json'
 require_relative 'seed_helper.rb'
 
-api_url = "https://api.unsplash.com/photos/random?client_id=407ce5ac089c78830a87a4481bd6b795a40d8fae43246e06170e7fba23f9a078"
+api_url = "https://api.unsplash.com/photos/random"
 
 30.times do
   unsplash_data = get_data(api_url)
