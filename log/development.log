@@ -49,3 +49,295 @@ Migrating to CreateComments (20180618202836)
   ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (32.6ms)[0m  [1m[35mCREATE DATABASE "backend_development" ENCODING = 'unicode'[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "backend_test" ENCODING = 'unicode'[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5073945470573576205)[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (15.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5073945470573576205)[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:6
+  [1m[36mPicture Create (27.6ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Maksym Kaharlytskyi"], ["url", "https://images.unsplash.com/photo-1508192074162-387c652ce6d0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=b20a2671ce978990b105a2c1ca7649b5"], ["created_at", "2018-06-19 14:39:25.075654"], ["updated_at", "2018-06-19 14:39:25.075654"]]
+  ↳ db/seed_helper.rb:6
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:6
+  [1m[36mPicture Load (5.5ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPicture Load (5.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (3.9ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPicture Load (1.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (30.9ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A view from an airplane window on the surface of the ocean with rocky islands jutting out of the water"], ["photographer", "Kirill Zakharov"], ["url", "https://images.unsplash.com/photo-1470290282174-30ea78123183?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=3948d2a833ad988e894b46b4de913ea9"], ["created_at", "2018-06-19 14:45:08.267036"], ["updated_at", "2018-06-19 14:45:08.267036"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Load (9.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (13.0ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Carles Rabada"], ["url", "https://images.unsplash.com/photo-1527588649744-63658081d625?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=89ef7d6f0990003e5cf08959c42990fc"], ["created_at", "2018-06-19 14:54:08.747106"], ["updated_at", "2018-06-19 14:54:08.747106"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Guillaume Jaillet"], ["url", "https://images.unsplash.com/photo-1508866210913-70d663ade481?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=d2afd2a6e7499a59c024122dd02789dd"], ["created_at", "2018-06-19 14:54:09.072328"], ["updated_at", "2018-06-19 14:54:09.072328"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Annie Spratt"], ["url", "https://images.unsplash.com/photo-1529330533323-9b93559a38a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=9b62bedc635edecbe7d33371d6a994c8"], ["created_at", "2018-06-19 14:54:09.190169"], ["updated_at", "2018-06-19 14:54:09.190169"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (2.3ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A view from an airplane window on the surface of the ocean with rocky islands jutting out of the water"], ["photographer", "Kirill Zakharov"], ["url", "https://images.unsplash.com/photo-1470290282174-30ea78123183?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=3948d2a833ad988e894b46b4de913ea9"], ["created_at", "2018-06-19 14:54:09.322814"], ["updated_at", "2018-06-19 14:54:09.322814"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Element5 Digital"], ["url", "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=f3988487816aa4fad4c6a968e7c47265"], ["created_at", "2018-06-19 14:54:09.444531"], ["updated_at", "2018-06-19 14:54:09.444531"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Thought Catalog"], ["url", "https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=bc007d6ac7f8c1d004ffe68233cca8f8"], ["created_at", "2018-06-19 14:54:09.583582"], ["updated_at", "2018-06-19 14:54:09.583582"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Denise Johnson"], ["url", "https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=8046b545b8d79bee520a28b8fb950ead"], ["created_at", "2018-06-19 14:54:09.705091"], ["updated_at", "2018-06-19 14:54:09.705091"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (1.9ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Linda Xu"], ["url", "https://images.unsplash.com/photo-1444824350087-2460ceb43eef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=b7453e2647f93264b03a096e6a63f7dd"], ["created_at", "2018-06-19 14:54:09.857262"], ["updated_at", "2018-06-19 14:54:09.857262"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (1.8ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Simone Hutsch"], ["url", "https://images.unsplash.com/photo-1506438186214-2b7b17c8f832?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=4e210ba7aeb2c429f9ba36a0d2810aed"], ["created_at", "2018-06-19 14:54:09.982999"], ["updated_at", "2018-06-19 14:54:09.982999"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Load (2.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPicture Load (2.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (13.8ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 10]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPicture Load (0.6ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.9ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Andrei Lazarev"], ["url", "https://images.unsplash.com/photo-1524317609190-7f775ac46aeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=eadfd922375708f7039628dbf41edfd0"], ["created_at", "2018-06-19 15:00:08.947015"], ["updated_at", "2018-06-19 15:00:08.947015"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (1.9ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Element5 Digital"], ["url", "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=f3988487816aa4fad4c6a968e7c47265"], ["created_at", "2018-06-19 15:00:09.085218"], ["updated_at", "2018-06-19 15:00:09.085218"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Jaron Nix"], ["url", "https://images.unsplash.com/photo-1516672774740-53499047b77d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=fed254a0e20c08eef1bb8cb67764fc9a"], ["created_at", "2018-06-19 15:00:09.187052"], ["updated_at", "2018-06-19 15:00:09.187052"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Annie Spratt"], ["url", "https://images.unsplash.com/photo-1529330533323-9b93559a38a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=9b62bedc635edecbe7d33371d6a994c8"], ["created_at", "2018-06-19 15:00:09.306024"], ["updated_at", "2018-06-19 15:00:09.306024"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Jed Villejo"], ["url", "https://images.unsplash.com/photo-1521606224735-b5f7b0265a8d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=2422732d0a6cd1c7e9bc7186851b877e"], ["created_at", "2018-06-19 15:00:09.502692"], ["updated_at", "2018-06-19 15:00:09.502692"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "The monumental interior of the National History Museum in London"], ["photographer", "Kaiyu Wang"], ["url", "https://images.unsplash.com/photo-1478606604719-cce9b0e91569?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=6f26c220057b46d8be7e5047b2ceb2e6"], ["created_at", "2018-06-19 15:00:09.604491"], ["updated_at", "2018-06-19 15:00:09.604491"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Tim Gouw"], ["url", "https://images.unsplash.com/photo-1499425614942-c400f2a827c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=a21d3722832aced03f014ff17906a2a8"], ["created_at", "2018-06-19 15:00:09.754006"], ["updated_at", "2018-06-19 15:00:09.754006"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Garrett Sears"], ["url", "https://images.unsplash.com/photo-1462984932903-94693e5d5fca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=660bf729cf043ab5ee4c72c0be4fc337"], ["created_at", "2018-06-19 15:00:09.929460"], ["updated_at", "2018-06-19 15:00:09.929460"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (2.3ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Simone Hutsch"], ["url", "https://images.unsplash.com/photo-1506438186214-2b7b17c8f832?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=4e210ba7aeb2c429f9ba36a0d2810aed"], ["created_at", "2018-06-19 15:00:10.197389"], ["updated_at", "2018-06-19 15:00:10.197389"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photographer", "Simone Hutsch"], ["url", "https://images.unsplash.com/photo-1509700257079-8a3f1f84bd67?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=b7ea67d91b44e47e2d80fc8d27affb86"], ["created_at", "2018-06-19 15:00:10.305061"], ["updated_at", "2018-06-19 15:00:10.305061"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Load (0.6ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPicture Load (1.9ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPicture Load (3.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (3.8ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 12]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (1.0ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (1.6ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (1.7ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (1.9ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPicture Destroy (1.0ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/softwareengineeringimmersive/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (18.3ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Rock formations in the desert."], ["photographer", "Protos Art"], ["url", "https://images.unsplash.com/photo-1504541169252-6bd2a1b3db37?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=e1622f9e0596ed08f63f4855ec9a03ae"], ["created_at", "2018-06-19 15:09:09.363950"], ["updated_at", "2018-06-19 15:09:09.363950"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (4.7ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A spectacular view of the inside of a canyon under a cloudy sky"], ["photographer", "Ben Esteves"], ["url", "https://images.unsplash.com/photo-1478103470625-ea17d788a009?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=fad2504f2d825987e3411d596c722db1"], ["created_at", "2018-06-19 15:09:09.497834"], ["updated_at", "2018-06-19 15:09:09.497834"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Seagull flying and looking down on the coastline at Muriwai Beach"], ["photographer", "James Youn"], ["url", "https://images.unsplash.com/photo-1475930550901-5cc885e36acf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=0be5e64080ec1b6dd3a58002fcff8a5c"], ["created_at", "2018-06-19 15:09:10.226707"], ["updated_at", "2018-06-19 15:09:10.226707"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (1.9ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A lively image of street and building lights on a busy night in Singapore"], ["photographer", "Lily Banse"], ["url", "https://images.unsplash.com/photo-1491542451321-54b31bd2d961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=5e95ffe79af25f2891edf934f5b8c98e"], ["created_at", "2018-06-19 15:09:10.543850"], ["updated_at", "2018-06-19 15:09:10.543850"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (1.4ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Rock formations in the desert."], ["photographer", "Protos Art"], ["url", "https://images.unsplash.com/photo-1504541169252-6bd2a1b3db37?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=e1622f9e0596ed08f63f4855ec9a03ae"], ["created_at", "2018-06-19 15:09:11.177540"], ["updated_at", "2018-06-19 15:09:11.177540"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Rock formations in the desert."], ["photographer", "Protos Art"], ["url", "https://images.unsplash.com/photo-1504541169252-6bd2a1b3db37?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=e1622f9e0596ed08f63f4855ec9a03ae"], ["created_at", "2018-06-19 15:09:12.451089"], ["updated_at", "2018-06-19 15:09:12.451089"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Shades of orange sunset above mountains in Ortisei"], ["photographer", "Alessandro Sacchi"], ["url", "https://images.unsplash.com/photo-1485805288518-52e7a4edfd78?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=e8181c08de4ff9b09e7091251a2cf7b7"], ["created_at", "2018-06-19 15:09:12.538507"], ["updated_at", "2018-06-19 15:09:12.538507"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Create (2.2ms)[0m  [1m[32mINSERT INTO "pictures" ("description", "photographer", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "A blurry photo of a person walking in snow on the side of a road in Tomsk"], ["photographer", "Roman Romashov"], ["url", "https://images.unsplash.com/photo-1496754154452-517fd13422ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI5Mjk1fQ&s=f3a787de69d7f18cefdc3945aae33535"], ["created_at", "2018-06-19 15:09:12.810219"], ["updated_at", "2018-06-19 15:09:12.810219"]]
+  ↳ db/seed_helper.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seed_helper.rb:7
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" LIMIT $1[0m  [["LIMIT", 11]]

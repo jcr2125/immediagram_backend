@@ -5,8 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-url = "https://api.unsplash.com/photos/random?client_id=99c793b7dfddc814120a5c2396eef14ad156c38e454595bb3a1d0baa119954d3"
+require 'rest-client'
+require 'json'
+require_relative 'seed_helper.rb'
 
-10.times do
-  Picture.create(name: Faker::Name.name)
+api_url = "https://api.unsplash.com/photos/random"
+
+30.times do
+  unsplash_data = get_data(api_url)
+  create_model(unsplash_data)
 end
