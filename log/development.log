@@ -1520,3 +1520,197 @@ Processing by PicturesController#index as */*
 Completed 200 OK in 139ms (Views: 102.4ms | ActiveRecord: 27.7ms)
 
 
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 15:07:21 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daianebushey/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (2.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (96.4ms)
+Completed 200 OK in 151ms (Views: 117.6ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 16:00:59 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (2.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (49.46ms)
+Completed 200 OK in 79ms (Views: 57.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 16:01:28 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.54ms)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 16:02:22 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.93ms)
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 16:04:41 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.74ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 17:04:04 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (1.9ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.07ms)
+Completed 200 OK in 65ms (Views: 54.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 17:04:24 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (0.9ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (5.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (10.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.23ms)
+Completed 200 OK in 64ms (Views: 43.3ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/pictures" for 127.0.0.1 at 2018-06-20 17:36:27 -0400
+Processing by PicturesController#index as */*
+  [1m[36mPicture Load (2.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 2]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 4]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 5]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 6]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 7]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 8]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 9]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = $1[0m  [["picture_id", 11]]
+[active_model_serializers]   ↳ app/controllers/pictures_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.95ms)
+Completed 200 OK in 48ms (Views: 38.2ms | ActiveRecord: 7.1ms)
+
+
